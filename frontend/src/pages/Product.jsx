@@ -9,7 +9,7 @@ const Product = () => {
   useEffect(()=>{
     setIsDataFetching(true);
     const productFetcing = async()=> {
-      const result = await fetch('http://localhost:3004/products')
+      const result = await fetch('https://mern-backend-xi.vercel.app/products')
       const response = await result.json()
 
       setIsDataFetching(false)

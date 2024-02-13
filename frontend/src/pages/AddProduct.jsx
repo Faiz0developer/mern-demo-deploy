@@ -7,7 +7,7 @@ const AddProduct = () => {
   const navigate = useNavigate()
 
   const sendProductData = (productData) => {
-    fetch("http://localhost:3004/products", {
+    fetch("https://mern-backend-xi.vercel.app/products", {
       method: "POST",
       body: JSON.stringify(productData),
       headers: {
