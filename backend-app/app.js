@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const ProductModel = require("./model/product");
 
 const app = express();
-app.use(cors({origin:`https://mern-frontend-bice.vercel.app`,credentials:true}))
+app.use(cors({origin:["https://mern-frontend-bice.vercel.app"],credentials:true}))
 
 app.use(express.json());
 
@@ -33,5 +33,4 @@ app.get('/products', async(req,res)=>{
 
 mongoose.connect(process.env.connectionString).then(() => {
   app.listen(3004);
-  res.send("Server connected");
 });
