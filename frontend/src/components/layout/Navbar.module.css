@@ -1,0 +1,27 @@
+.nav {
+  background-color: antiquewhite;
+  padding: 20px 0px;
+}
+.ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.link {
+  color: brown;
+  text-decoration: none;
+}
+
+.fvrtCount{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid red;
+  color: red;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+}
