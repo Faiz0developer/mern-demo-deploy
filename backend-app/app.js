@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const ProductModel = require("./model/product");
 
 const app = express();
-app.use(cors());
+app.use(cors({origin:`https://mern-frontend-bice.vercel.app`,credentials:true}))
 
 app.use(express.json());
 
